@@ -79,7 +79,7 @@ export default function App() {
         return (
           <WriteMessage 
             onNavigate={handleNavigate} 
-            selectedContacts={navigationData.selectedContacts}
+            // selectedContacts={navigationData.selectedContacts}
             t={t}
           />
         );
