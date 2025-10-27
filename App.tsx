@@ -16,7 +16,7 @@ import { Language, getTranslation } from './utils/translations';
 type ScreenType = 'login' | 'signup' | 'home' | 'send' | 'write' | 'inbox' | 'sent' | 'thank' | 'stats' | 'settings' | 'notifications';
 
 interface NavigationData {
-  selectedContacts?: string[];
+  selectedContacts?: any;
   preselectedContact?: any;
   messageId?: string;
 }
@@ -79,7 +79,7 @@ export default function App() {
         return (
           <WriteMessage 
             onNavigate={handleNavigate} 
-            // selectedContacts={navigationData.selectedContacts}
+            selectedContacts={navigationData.selectedContacts}
             t={t}
           />
         );
